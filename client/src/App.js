@@ -1,7 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import tickersOperations from "./redux/tickers/tickers-operations";
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(tickersOperations.getTickers());
+  }, [dispatch]);
   return (
     <div className="App">
       <header className="App-header">
