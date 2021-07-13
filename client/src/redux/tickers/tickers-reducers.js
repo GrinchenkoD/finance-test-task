@@ -5,7 +5,6 @@ const { loadTickers } = tickersActions;
 
 export const tickers = createReducer([], {
   [loadTickers]: (_, { payload }) => {
-    console.log(payload);
     return [...payload];
   },
 });

@@ -1,0 +1,19 @@
+.cardWrapper,
+.cardWrapperLoss {
+  display: flex;
+  width: 100%;
+  align-items: baseline;
+}
+
+.changeWrapper {
+  background-color: rgba(21, 255, 0, 0.295);
+  padding: 10px;
+}
+.changeWrapperLoss {
+  background-color: rgba(255, 0, 0, 0.274);
+  padding: 10px;
+}
+
+.name {
+  margin: 0;
+}
